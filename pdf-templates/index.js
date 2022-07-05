@@ -31,7 +31,7 @@ const pdfContent = async (pdfTemplateName, pdfTemplateData) => {
     }
 
     pdfTemplateData.formatCurrency = (amount) => {
-        return '₹' + numeral(amount).format('0,0.00')
+        return '$' + numeral(amount).format('0,0.00')
     }
 
     try {
